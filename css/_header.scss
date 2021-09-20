@@ -1,0 +1,206 @@
+.header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: $box-shadow;
+    background:#fff;
+    z-index: 1000;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    i{
+        color: $orange;
+        padding:0 10px 0 0;
+    }
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    &:hover{
+        color: $orange;
+    }
+}
+.icons div{
+    display:inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    border:1px solid $black;
+    border-radius: 0.5rem;
+    background: #fff;
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    text-align: center;
+    cursor:pointer;
+    &:hover{
+        background: $orange;
+        i{
+            color: #fff;
+        }
+    }
+}
+#btn-menu{
+    display: none;
+}
+.search-form{
+    position: absolute;
+    top: 110%;right:-110%;
+    width: 50rem;
+    height: 5rem;
+    background:#fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow:$box-shadow;
+    &.active{
+        right: 2rem;
+        transition: 0.4s linear;
+    }
+    input{
+        height: 100%;
+        width: 100%;
+        background:none;
+        text-transform: none;
+        font-size: 1.6rem;
+        padding: 0 1.5rem;
+    }
+    label{
+        font-size: 2.2rem;
+        padding-right: 1.5rem;
+        cursor: pointer;
+        i:hover{
+            color: $orange;
+        }
+    }
+}
+.shopping-cart{
+    position: absolute;
+    top: 110%;right:-110%;
+    padding:1rem;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    width: 30rem;
+    background: #fff;
+    &.active{
+        right: 2rem;
+        transition: 0.4s linear;
+    }
+    .total-cart{
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+.box-cart{
+    display:flex;
+}
+.bx-trash{
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;right: 2rem;
+    color: $light-color;
+    transform:translateY(-50%);
+    &:hover{
+        color: $orange;
+    }
+}
+.content{
+    text-align: center;
+    h3{
+        font-size: 1.7rem;
+        padding-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    span{
+        color: $light-color;
+        font-size: 1.6rem;
+        input{
+            width: 45px;
+        }
+    }
+}
+.btn-checkout{
+    display:block;
+}
+.login-form{
+    position: absolute;
+    top: 110%;right:-110%;
+    width: 40rem;
+    box-shadow: $box-shadow;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+    &.active{
+        right: 2rem;
+        transition: 0.4s linear;
+    }
+    h3{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        
+    }
+    &-box{
+        width: 100%;
+        margin: 0.7rem 0;
+        background: #eee;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        text-transform: none;
+    }
+    input{
+        display:inline
+    }
+    a{
+        color: $orange;
+        text-decoration: underline;
+    }
+}
+@media(max-width:1024px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        .navbar{
+            position:absolute;
+            top: 110%;right: -110%;
+            width: 20rem;
+            box-shadow: $box-shadow;
+            border-radius: 0.5rem;
+            background: #fff;
+            &.active{
+                right: 2rem;
+                transition: 0.4s linear;
+            }
+            a{
+                font-size: 1.5rem;
+                margin:2rem 2.5rem;
+                display:block;
+            }
+        }
+    }
+    #btn-menu{
+        display: inline-block;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 45%;
+    }
+}
