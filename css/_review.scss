@@ -1,0 +1,16 @@
+.review-slider{
+    padding: 1rem;
+}
+.box-review{
+    img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 1.5rem;
+        color: $light-color;
+        line-height: 1.5;
+    }
+}

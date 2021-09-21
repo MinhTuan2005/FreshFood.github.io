@@ -22,10 +22,6 @@
     gap: 1rem;
     position: relative;
     margin: 1rem 0;
-    img{
-        height: 10rem;
-        width: 10rem;
-    }
 }
 .word-3 {
     display: -webkit-box;
@@ -35,4 +31,11 @@
     text-overflow: clip;
     word-wrap: break-word;
     max-width: 100%;
+}
+.star{
+    i{
+        font-size: 1.7rem;
+        color: $orange;
+        padding: 0.5rem 0;
+    }
 }
